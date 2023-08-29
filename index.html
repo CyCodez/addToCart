@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </div>
+    <nav>
+      <div class="innernav0">
+        <div class="wdiv"><img src="./images/logo.svg" alt="logo" /></div>
+        <div>Collections</div>
+        <div>Men</div>
+        <div>Women</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+        <img
+          class="harmburg"
+          src="https://static.vecteezy.com/system/resources/previews/002/292/406/original/hamburger-menu-line-icon-free-vector.jpg"
+      /></span>
+
+      <div class="innernav">
+        <a class="icon-cart" href="#"
+          ><img
+            src="./images/icon-cart-dark.svg"
+            alt="cart"
+            class="cart-icon"
+          /><span class="cart-num">0</span>
+          <div class="cart-overlay" id="overlay-cart">
+            <div class="hr-div">
+              <p>cart</p>
+              <hr />
+            </div>
+            <div class="container-overlay">
+              <div class="overlay-flex"></div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#"
+          ><img src="./images/image-avatar.png" alt="avatar" class="avatar"
+        /></a>
+      </div>
+    </nav>
+    <div class="flex-container">
+      <div class="image-product-container">
+        <img src="./images/image-product-1.jpg" class="image-product" />
+        <div class="multiple-image">
+          <img src="./images/image-product-1.jpg" id="first-img" />
+          <img src="./images/image-product-2.jpg" id="second-img" />
+          <img src="./images/image-product-3.jpg" id="third-img" />
+          <img src="./images/image-product-4.jpg" id="fourth-img" />
+        </div>
+      </div>
+      <div class="sneakers-div">
+        <p class="snc">Sneaker Company</p>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p class="sneakers-paragraph">
+          These low-profile sneakers are your perfect casual wear<br />
+          companion. Featuring a durable rubber outer sole, they’ll<br />
+          withstand everything the weather can offer.
+        </p>
+        <div class="d-container">
+          <div class="d-price">$125.00</div>
+          <div class="d-cent">50%</div>
+        </div>
+        <p class="inner-dollar">$250.00</p>
+        <div class="plus-minus-div">
+          <div class="plus-minus">
+            <div>
+              <img
+                src="./images/icon-minus.svg"
+                alt="minus-icon"
+                class="decrement"
+              />
+            </div>
+            <div class="count">0</div>
+            <div>
+              <img
+                src="./images/icon-plus.svg"
+                class="increment"
+                alt="plus-icon"
+              />
+            </div>
+          </div>
+          <button class="addToCart">
+            <div>
+              <img class="cart-img" src="./images/icon-cart-white.svg" />
+            </div>
+            <div>Add to cart</div>
+          </button>
+        </div>
+        <!-- 0 Add to cart -->
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
